@@ -1,47 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Helloworld</title>
-<style type="text/css">
-body,td,th {
-	font-size: 36px;
-}
-#Title_top {
-	font-size: xx-large;
-}
-</style>
+<title>Github Using</title>
 </head>
 
-<body <!--background="Resource/Image/JPG/Background3.JPG"--> text="#33FF99">
-<h1 class="Title_top" id="Title_top"><span id="Title_top">Helloworld</span> </h1>
+<body>
+<h1>用Github保存自己的网站</h1>
 <hr width="20%" align="left"/>
-
-<div>
-  <p>
-    <object width="32" height="32">
-    </object>
-    <object width="32" height="32">
-    </object>
-  <img src="Resource/Image/PNG/BackGround4.png" />
+<p>完整的教程请参见<a href="https://www.youtube.com/watch?v=mkGJB3PEdNU">视频教程</a> Github 的官方网站 ：<a href="https://github.com/">Github</a></p>
+<h3>申请账号</h3>
+<p><a href="https://github.com/">Github</a>官网上可以申请账号,申请后可阅读一下介绍，也可以不读...，我下载了它说要下的Github，Git shell，然并卵</p>
+<h3>下载Git bash</h3>
+<p>Window版网站<a href="https://git-for-windows.github.io/">git-for-windows.github.io</a> 也可以Google一下</p>
+<h3>创建站点</h3>
+<p>用账号登陆<a href="https://github.com/">Github</a>,右上角有一个加号，点击选New repository, 然后填Name，比如Webtest，Description任意，选public，打钩创建README，其他默认就行，create repository</p>
+<h3>处理站点基本信息</h3>
+<p>
+创建好了站点，点击一下README.md的链接，之后右边会有一排按钮，Raw Blame History，点击那一行的笔，进入编辑状态，支持任何html（相当于在<body>标签下编写就行了，初学的话不编辑也没问题）编辑好以后返回你的站点（上述Webtest）页面右下角有个HTTPS clone URL 的，把网址复制下来
 </p>
-</div>
-<blockquote>
-  <p>Helloworld<br />
-    你&copy;好</p>
-</blockquote>
-<p>&nbsp;</p>
-<ol>
-  <li>sdas</li>
-  <li>ddasd</li>
-  <li>ghf</li>
-  <li>hdh</li>
-</ol>
-<p>dfhddgsd</p>
-<p>gfsd</p>
-<p>&nbsp;</p>
-<div>
-  <!-- #BeginDate format:IS1m -->2015-07-31  19:10<!-- #EndDate -->
-</div>
+<h3>上传网页（假设你写好了一个Helloworld.html要上传）</h3>
+<p>
+先建一个文件夹，如D:/WWW （待会你的站点webtest就放WWW里了）
+打开Git bash(这是一个支持Linux命令的东西) 导航到WWW: cd /d/WWW
+<br>
+下载（克隆）站点git clone +上面要复制的网址<br>
+这时WWW下多出了Webtest文件夹
+<br>
+cd webtest 进入站点文件夹<br>cat README.md
+可查看README.md文件<br>
+现在，把你的网页复制到webtest里！！！<br>
+敲入git checkout --orphan gh-pages<br>
+敲入git add -A<br>
+敲入git commit -a -m "commit1"<br>
+如果是第一次操作，请输入 git config --global user.email "你注册的邮箱"<br>
+git config --global user.name "你的用户名"<br>
+<br>
+最后  git push origin gh-pages
+大工告成<br>
+
+</p>
+<h3>访问你的网页</h3>
+<p>
+http://你的用户名.github.io/webtest/Helloworld.html  （io后面就相当于你的站点了）
+</p>
 </body>
 </html>
