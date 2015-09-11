@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Style/css.css"/>
+<script language="javascript" src="style/general.js"></script>
+<script type="text/javascript">
+function stopMove(){
+	document.getElementById("move").scrollAmount='0';
+}
+function startMove(){
+	document.getElementById("move").scrollAmount='5';
+}
+</script>
+<script type="text/javascript" >  
+function  getColor1(){ 
+	document.getElementById("end_text").style.borderColor="blue";	
+	window.setTimeout(getColor2,500);
+}  
+function getColor2(){
+	document.getElementById("end_text").style.borderColor="#3F3";	
+	window.setTimeout(getColor3,500);
+}
+function getColor3(){
+	document.getElementById("end_text").style.borderColor="orange";
+	window.setTimeout(getColor1,500);
+}</script>
+<title>ZHU Xinyu's CV</title>
+</head>
+
+<body class="main_body" id="main_body" onload="getColor2()">
+<img src="image/back1.jpg" width="100%" height="20%"/>
+<div class="doc" id="div_doc">
+
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="276">
+    <div class="container" id="container">
+    <div class="navi" id="div_navi">
+    	<div class="btn_intro" id="btn_intro">
+        <a href="My CV.html" target="_top" onmouseover="MM_nbGroup('over','img_intro','image/word12.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <img src="image/word11.JPG" alt="A Brief Introduction to Me" name="A Brief Introduction to Me" class="img_intro" id="img_intro" width="220" height="33" border="0"/>
+        </a>
+        </div>
+        <div class="btn_intro" id="btn_oncam">
+        <a href="On-Campus.html" target="_top" onmouseover="MM_nbGroup('over','img_oncam','image/word22.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <img src="image/word21.JPG" alt="On-campus Learning Experience" name="On-campus Learning Experience" width="220" height="33" class="img_intro" id="img_oncam" border="0"/>
+        </a>
+        </div>
+        <div class="btn_intro" id="btn_selfl">
+        <a href="Self-learning.html" target="_top" onmouseover="MM_nbGroup('over','img_selfl','image/word32.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <img src="image/word31.JPG" alt="My Self-learning Experience" name="Self-learning Experience" width="220" height="33" class="img_intro" id="img_selfl" border="0"/>
+        </a>
+        </div>
+        <div class="btn_intro" id="btn_person">
+        <a href="Personal View.html" target="_top" onmouseover="MM_nbGroup('over','img_person','image/word42.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <img src="image/word41.JPG" alt="Personal View on the Research" name="Personal View on the Research" width="220" height="33" class="img_intro" id="img_person" border="0"/>
+        </a>
+        </div>
+        <div class="btn_intro" id="btn_works">
+        <a href="My Works.html" target="_top" onmouseover="MM_nbGroup('over','img_works','image/word52.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <img src="image/word51.JPG" alt="Download Some of My Works" name="Some of My Works" width="220" height="29" class="img_intro" id="img_works" border="0"/>
+        </a>
+        </div>
+        <div class="btn_intro">       
+        <marquee direction="left" behavior="alternate" scrollamount="5">
+        <marquee direction="down" behavior="scroll" scrollamount="4"><img src="image/bean.png" width="100"/></marquee></marquee>
+        </div>
+    </div>
+    </div>
+    <div class="div_gallery2">
+    <h3 class="show_res2">War 2</h3>
+    	 <h5 class="show_res2">Selecting your soldiers</h5>
+    	<a href="image/war2_show.JPG" target="_blank"><img class="gallery" width="220" height="142" src="image/war2_show.JPG"/></a><br />
+         <h5 class="show_res2">Controling your soldiers</h5>
+        <a href="image/war2_show2.JPG" target="_blank"><img class="gallery" width="220" height="142" src="image/war2_show2.JPG"/></a><br />
+         <h5 class="show_res2">Fighting</h5>
+        <a href="image/war2_show3.JPG" target="_blank"><img class="gallery" width="220" height="142" src="image/war2_show3.JPG"/></a><br />
+    </div>
+   	<img class="shadow1" src="image/shadow.png"/>
+    </td>
+    <td width="550" valign="top" align="left">
+    <div class="text_intro_work" id="text_intro">
+    <img class="img_title" id="img_title" src="image/title5.png" width="550" height="120"/>
+    <hr class="hr_2"/>
+    <p class="p_intro" id="p_intro">
+    Here, I would like to show some of my programming works. The brief introduction and the links for downloading the programs are listed below. The source code of them are also provided.
+    </p>
+    </div>
+    </
+    <div>
+    <dl class="downloadList" id="downloadList">
+    	<dt><a href="download/Dog of war.zip">Dog of war</a></dt>
+        <dd>This is a game I developed from the assignment of COMP 1021. It is written in Python. The original version of this game has some background sound which I didn't include here because they are too large.</dd>
+        
+        <dt><a href="download/War2.zip">War 2</a></dt>
+        <dd>This game is developed with Python by myself. You need to produce some soldiers and control them to defeat the computer. The computer will use different tactics based on the situation. Details of the controlling methods can be found in the comment of the source code. The original version of this game has some background sound which I didn't include here because they are too large.</dd>
+        
+        <dt><a href="download/MySimpleNote8.0.zip">MySimpleNote8.0</a></dt>
+        <dd>This is a desktop application wrote in Java. This application have a lot of functions which are too many to mention all of them here. The major task of it is to help people make some e-note. It can save color information which made it more powerful than Notepad (To dye the text, you need to first select the text and then select a kind of color). This application can help you do html program, made a file tree for you, open the files which are dragged into its window....The source code of it can be downloaded <a href="download/MySimpleNoteSrc.zip">here</a>.</dd>
+        
+        <dt><a href="download/矩阵计算.jar">矩阵计算</a></dt>
+        <dd>This is a desktop application wrote in Java. The major service it provides is to help students calculate the echelon matrix of an arbitrary matrix or the inverse matrix of a square matrix. A big advantage of this program is that it can show you the detailed process. The source code of this program can be found <a href="download/Matrixsrc.zip">here</a>.</dd>
+        
+        <dt><a href="download/MatrixCalc.apk">MatrixCalc</a></dt>
+        <dd>This a the android version of "矩阵计算" mentioned above. The source code can be found <a href="download/MatrixAndroidSrc.zip">here</a></dd>
+    </dl>
+    
+    
+    
+    
+    </div>
+    
+    </td>
+    <td valign="top">
+    <div class="div_gallery" id="div_gallery">
+    <h4 class="show_res">Dog of War</h4>
+    <a href="image/DogOfWar_show.JPG" target="_blank"><img class="gallery" src="image/DogOfWar_show.JPG" width="220" height="142"/></a><br />
+    <h4 class="show_res">MySimpleNote8.0</h4>
+    <a href="image/MySimpleNote_show.JPG" target="_blank"><img class="gallery" src="image/MySimpleNote_show.JPG" width="220" height="142"/></a><br />
+    <h4 class="show_res">矩阵运算</h4>
+    <a href="image/Matrix_show.jpg" target="_blank"><img class="gallery" src="image/Matrix_show.jpg" width="220" height="142"/></a><br />
+    <h4 class="show_res">MatrixCalc</h4>
+    <marquee class="gallery_move" id="move" direction="up" behavior="scroll"  scrollamount="5" onmouseover="stopMove();" onmouseout="startMove();" >
+    <a href="image/Matrix_show1.jpg" target="_blank"><img alt="Try another browser if you see this" class="gallery" src="image/Matrix_show1.jpg" width="220" height="241"/></a><br />
+     <a href="image/Matrix_show2.jpg" target="_blank"><img alt="Try another browser if you see this" class="gallery" src="image/Matrix_show2.jpg" width="220" height="241"/></a><br />
+     </marquee>
+     
+     </div>
+    <img class="shadow" src="image/shadow.png"/>
+     
+    </td>
+  </tr>
+</table>
+<div class="end_text" id="end_text">
+I will really appreciate it if you can offer me this opportunity to realize my dream. Working with your team and learning knowledge from you will be my wealth of a lifetime. I promise that I will learn hard and do contribution to the teamwork. Thank you once again!
+</div>
+</div>
+
+<hr class="designer"/>
+<div class="designer_info">
+<table align="center">
+<tr>
+<td>
+<img src="image/UST.png" width="40"/></td>
+<td>
+This webpage is designed by ZHU Xinyu, student of HKUST<br />
+My Student Id: 20256148 My e-mail address: <a href="mailto:xzhuah@connect.ust.hk">xzhuah@connect.ust.hk</a><br />
+Some javascript functions used in this website are copyed from <a href="urop.ust.hk" target="_blank">UROP Website</a> of HKUST
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

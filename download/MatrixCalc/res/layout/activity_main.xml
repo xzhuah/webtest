@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+ android:layout_width="fill_parent"  
+ android:layout_height="fill_parent"  
+ android:fadingEdge="vertical">
+ <HorizontalScrollView  
+        android:orientation="horizontal"  
+        android:layout_width="fill_parent"    
+        android:layout_height="fill_parent">  
+<TableLayout 
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   >
+
+   <TableRow android:gravity="left">
+       <LinearLayout
+            android:layout_height="wrap_content"
+      	 	android:layout_width="match_parent"
+      	 	android:orientation="horizontal"> 
+       <EditText android:id="@+id/num_row"
+           android:layout_height="wrap_content"
+           android:layout_width="70dp"
+           android:hint="@string/text_row"
+           android:inputType="numberSigned|numberDecimal"/> 
+       <EditText android:id="@+id/num_col"
+          android:layout_height="wrap_content"
+          android:layout_width="70dp"
+           android:hint="@string/text_col"
+           android:inputType="numberSigned|numberDecimal"/>
+       <Button android:id="@+id/btn_form"
+           android:layout_height="wrap_content"
+          android:layout_width="150dp"
+           android:text="@string/text_form"/>
+       </LinearLayout>
+   </TableRow>
+   
+   <TableRow>
+   <LinearLayout 
+       android:id="@+id/layout_matrix"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:orientation="vertical">    
+   </LinearLayout>
+   </TableRow>
+    	 <LinearLayout
+            android:layout_height="wrap_content"
+      	 	android:layout_width="match_parent"
+      	 	android:orientation="horizontal"> 
+        <Button 
+            android:id="@+id/btn_labber"       
+            android:layout_height="wrap_content"
+            android:text="@string/text_labber"
+            android:layout_width="140dp"/>
+
+        <Button
+            android:id="@+id/btn_inverse" 
+            android:layout_height="wrap_content"
+            android:text="@string/text_inverse"
+            android:layout_width="140dp"/>
+	</LinearLayout>
+    
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+</TableLayout>
+</HorizontalScrollView>
+</ScrollView>
