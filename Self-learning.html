@@ -3,8 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="Style/css.css" type="text/css" rel="stylesheet"/>
-<script language="javascript" src="style/general.js"></script>
 <title>ZHU Xinyu's CV</title>
+<script type="text/javascript">
+function changeSource(var1,var2){
+	document.getElementById(var1).src=var2;
+}
+</script>
 </head>
 
 <body class="main_body" id="main_body">
@@ -17,27 +21,27 @@
     <div class="container" id="container">
     <div class="navi" id="div_navi">
     	<div class="btn_intro" id="btn_intro">
-        <a href="My CV.html" target="_top" onmouseover="MM_nbGroup('over','img_intro','image/word12.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <a id="CVlink" href="My CV.html" target="_top" onmouseover="changeSource('img_intro','image/word12.JPG');" onmouseout="changeSource('img_intro','image/word11.JPG');">
         <img src="image/word11.JPG" alt="A Brief Introduction to Me" name="A Brief Introduction to Me" class="img_intro" id="img_intro" width="220" height="33" border="0"/>
         </a>
         </div>
         <div class="btn_intro" id="btn_oncam">
-        <a href="On-Campus.html" target="_top" onmouseover="MM_nbGroup('over','img_oncam','image/word22.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <a id="Onlink" href="On-Campus.html" target="_top" onmouseover="changeSource('img_oncam','image/word22.JPG');" onmouseout="changeSource('img_oncam','image/word21.JPG');">
         <img src="image/word21.JPG" alt="On-campus Learning Experience" name="On-campus Learning Experience" width="220" height="33" class="img_intro" id="img_oncam" border="0"/>
         </a>
         </div>
         <div class="btn_intro" id="btn_selfl">
-        <a href="Self-learning.html" target="_top" onmouseover="MM_nbGroup('over','img_selfl','image/word32.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <a id="Selflink" href="Self-learning.html" target="_top" onmouseover="changeSource('img_selfl','image/word32.JPG');" onmouseout="changeSource('img_selfl','image/word31.JPG');">
         <img src="image/word31.JPG" alt="My Self-learning Experience" name="Self-learning Experience" width="220" height="33" class="img_intro" id="img_selfl" border="0"/>
         </a>
         </div>
         <div class="btn_intro" id="btn_person">
-        <a href="Personal View.html" target="_top" onmouseover="MM_nbGroup('over','img_person','image/word42.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <a id="Personallink" href="Personal View.html" target="_top" onmouseover="changeSource('img_person','image/word42.JPG');" onmouseout="changeSource('img_person','image/word41.JPG');">
         <img src="image/word41.JPG" alt="Personal View on the Research" name="Personal View on the Research" width="220" height="33" class="img_intro" id="img_person" border="0"/>
         </a>
         </div>
         <div class="btn_intro" id="btn_works">
-        <a href="My Works.html" target="_top" onmouseover="MM_nbGroup('over','img_works','image/word52.JPG','',1);" onmouseout="MM_nbGroup('out');">
+        <a id="Mylink" href="My Works.html" target="_top" onmouseover="changeSource('img_works','image/word52.JPG');" onmouseout="changeSource('img_works','image/word51.JPG');">
         <img src="image/word51.JPG" alt="Download Some of My Works" name="Some of My Works" width="220" height="29" class="img_intro" id="img_works" border="0"/>
         </a>
         </div>
@@ -113,7 +117,7 @@ Multivariable Calculus</h3>For a computer science student, a good command of mat
 <img src="image/UST.png" width="40"/></td>
 <td>
 This webpage is designed by ZHU Xinyu, student of HKUST<br />
-My Student Id: 20256148 My e-mail address: <a href="mailto:xzhuah@connect.ust.hk">xzhuah@connect.ust.hk</a><br />
+My e-mail address: <a href="mailto:xzhuah@connect.ust.hk">xzhuah@connect.ust.hk</a><br />
 Some javascript functions used in this website are copyed from <a href="urop.ust.hk" target="_blank">UROP Website</a> of HKUST
 </td>
 </tr>

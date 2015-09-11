@@ -2,15 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="Style/css.css" type="text/css" rel="stylesheet"/>
 <title>Github Using</title>
 </head>
 
-<body>
+<body class="Teach_body">
 <h1>用Github保存自己的网站</h1>
-<hr width="20%" align="left"/>
+<hr width="40%" align="left"/>
 <p>完整的教程请参见<a href="https://www.youtube.com/watch?v=mkGJB3PEdNU">视频教程</a> Github 的官方网站 ：<a href="https://github.com/">Github</a></p>
 <h3>申请账号</h3>
-<p><a href="https://github.com/">Github</a>官网上可以申请账号,申请后可阅读一下介绍，也可以不读...，我下载了它说要下的Github，Git shell，然并卵</p>
+<p><a href="https://github.com/">Github</a>官网上可以申请账号,申请后可阅读一下介绍，也可以不读...，我下载了它说要下的Github，Git shell，据说是图形化界面，个人认为这里敲代码比较好用</p>
 <h3>下载Git bash</h3>
 <p>Window版网站<a href="https://git-for-windows.github.io/">git-for-windows.github.io</a> 也可以Google一下</p>
 <h3>创建站点</h3>
@@ -22,7 +23,7 @@
 <h3>上传网页（假设你写好了一个Helloworld.html要上传）</h3>
 <p>
 先建一个文件夹，如D:/WWW （待会你的站点webtest就放WWW里了）
-打开Git bash(这是一个支持Linux命令的东西) 导航到WWW: cd /d/WWW
+打开Git bash(这是一个支持Linux命令的东西) <br>导航到WWW，输入cd /d/WWW
 <br>
 下载（克隆）站点git clone +上面要复制的网址<br>
 这时WWW下多出了Webtest文件夹
@@ -46,7 +47,21 @@ git config --global user.name "你的用户名"<br>
 http://你的用户名.github.io/webtest/Helloworld.html  （io后面就相当于你的站点了）
 </p>
 <p>注意，第二次修改时不是每一步都要重做，那些创建东西的步骤就不用重做了。其实只要替换掉html后在站点文件夹下重复，敲入 git commit -a -m "commit3"（"commit3"每次都不一样，第一次写commit1，第二次就写commit2，或其他字符。）然后
-git add -A 以及git push origin gh-pages三步即可,若更新成功，会打印好几行字符</p>
+git add -A 以及git push origin gh-pages三步即可,若更新成功，会打印好几行字符，有的时候状况比较多，可以试一下多次执行这几条命令。</p>
 <p>由于浏览器的缓存功能，更新成功了之后清一下浏览器缓存再访问你的网址才看得出效果，或用另一个浏览器，或等一会再访问<p>
+<hr class="designer"/>
+<div class="designer_info">
+<table align="center">
+<tr>
+<td>
+<img src="image/UST.png" width="40"/></td>
+<td>
+This webpage is designed by ZHU Xinyu, student of HKUST<br />
+My e-mail address: <a href="mailto:xzhuah@connect.ust.hk">xzhuah@connect.ust.hk</a><br />
+Some javascript functions used in this website are copyed from <a href="urop.ust.hk" target="_blank">UROP Website</a> of HKUST
+</td>
+</tr>
+</table>
+</div>
 </body>
 </html>
