@@ -1,0 +1,205 @@
+/* CSS Document */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.white-background {
+  background-color: #fff;
+  color: #000!important;
+}
+
+section {
+  padding: 40px 0;
+  min-height: 700px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+section#home {
+  padding-top: 100px;
+  background-image: url(http://zyuaf.github.io/HelloWorld/images/bg-1.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section#study {
+  background-image: url(http://zyuaf.github.io/HelloWorld/images/bg-2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section#extra-curricula {
+  background-image: url(http://zyuaf.github.io/HelloWorld/images/bg-3.jpg)  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section#contact {
+  background-image: url(http://zyuaf.github.io/HelloWorld/images/bg-4.jpg) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 60px 15px;
+}
+
+.container-fluid {
+  max-width: 900px;
+  height: 100%;
+}
+/* a transparent background of the navi bar*/
+.navbar {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: rgba(0, 100, 0, 0.1);
+  min-height: 100px;
+}
+
+.icon-bar {
+  background-color: white;
+}
+/*Text color when mouse over*/
+.navbar .nav>li>a:hover, .nav>li>a:focus, .nav>li.active>a {
+  color: #C33;
+  background-color: transparent;
+}
+
+blockquote {
+  /* margin: 20px; */
+  font-family: "Noto Serif",serif;
+  font-style: italic;
+  font-size: 20px!important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* code-block typing effect */
+/*
+.code-block {
+  font-family: Inconsolata, Monaco, 'Andale Mono', monospace;
+  font-size: 16px;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.code-block>p {
+  margin: 0;
+}
+
+.css-typing {
+  text-align: left!important;
+  width: 0;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.typeone {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 1s;
+}
+.typetwo {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 3s;
+}
+.typethree {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 5s;
+}
+.typefour {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 7s;
+}
+
+@keyframes type{
+  from { width: 0; }
+  to {width: 100%;}
+}
+
+@-webkit-keyframes type{
+  from { width: 0; }
+  to {width: 100%;}
+}
+*/
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.course-image:hover .image-overlay{
+  opacity: 1;
+}
+/* ghost element trick for vertical alignment */
+.image-overlay::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 0%;
+  vertical-align: middle;
+}
+
+.overlay-text {
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.button {
+  border-color: #18bc9c;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  font-size: 36px;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #18bc9c;
+  color: white;
+}
+
+.button:hover{
+  background-color: white;
+  color:#18bc9c;
+}
+
+.black-box {
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.contact-info {
+  font-size: 18px;
+  font-family: "Noto serif",serif;
+}
