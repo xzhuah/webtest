@@ -1,0 +1,26 @@
+﻿@{
+var imagePath=""; 
+if (Request["Choice"] != null)
+   {imagePath="Images/" + Request["Choice"];} 
+} 
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h1>Display Images</h1> 
+<form method="post" action="Default"> 
+I want to see: 
+<select name="Choice"> 
+  <option value="orderedList0.png">Photo 1</option> 
+  <option value="orderedList1.png">Photo 2</option> 
+  <option value="orderedList2.png">Photo 3</option> 
+</select> 
+<input type="submit" value="Submit" /> 
+@if (imagePath != "")
+{
+<p>
+<img src="@imagePath" alt="Sample" />
+</p>
+}  
+</form> 
+</body> 
+</html>
