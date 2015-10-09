@@ -161,4 +161,17 @@ img.robot{
 .Teach_body{
 	padding-left:10px;
 }
+#slideshow{
+	width:240px;
+	height:200px;
+	position:relative;
+	overflow:hidden;
+}
+.pagesList:hover{
+	font-size:24px;
+}
+#pageList{
+	width:200px;
+	height:150px;
+}
 
