@@ -10,6 +10,7 @@ body{
 .btn_intro{
 	margin-left: 10px;
 	margin-bottom: 5px;
+	
 }
 .navi{
 	background: url(../image/bg_nav.png) no-repeat;
@@ -160,3 +161,4 @@ img.robot{
 .Teach_body{
 	padding-left:10px;
 }
+

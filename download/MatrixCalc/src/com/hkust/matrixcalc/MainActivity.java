@@ -34,7 +34,6 @@ public class MainActivity extends ActionBarActivity {
         rowNum=(EditText)findViewById(R.id.num_row);
         colNum=(EditText)findViewById(R.id.num_col);
         form.setOnClickListener(new Button.OnClickListener(){
-
 			@Override
 			public void onClick(View v) {
 				try{
@@ -169,7 +168,7 @@ public class MainActivity extends ActionBarActivity {
     private void OutputLabber(double[][] aij){//必须直接对aij进行操作
     	writeProcess("原矩阵为:");
     	writeProcess(aij);
-    	labber(aij,1,1,true);
+    	labber(aij,1,1,true,0);
     }
     private void OutputInverse(double[][] aij){
     	if(aij.length!=aij[0].length){
@@ -243,12 +242,12 @@ public class MainActivity extends ActionBarActivity {
     			bij[i][j]=aij[i][j];
     		}
     	}
-    	labber(bij,1,1,false);
+    	int interchage=labber(bij,1,1,false,0);
     	double h=1;
 		for(int i=1;i<=bij.length;i++){
 			h*=getaij(bij,i,i);
 		}
-		return h;
+		return h*Math.pow(-1,interchage);
     }
     private int[] getNextNoneZero(double[][] aij,int startrow,int startcol){
     	int[] pos=new int[2];
@@ -264,7 +263,7 @@ public class MainActivity extends ActionBarActivity {
     	return pos;
     	
     }
-    private void labber(double[][] aij,int startNoneZeroRow,int startNoneZeroCol,boolean whetherWrite){
+    private int labber(double[][] aij,int startNoneZeroRow,int startNoneZeroCol,boolean whetherWrite,int interchageNum){
     	//aij改为阶梯矩阵
     	int noneZeroRow,noneZeroCol;
 		int loca[]=new int[2];
@@ -284,12 +283,13 @@ public class MainActivity extends ActionBarActivity {
 				}
 				if(whetherWrite) writeProcess("该矩阵的行列式的值为"+h);
 			}
-			return;
+			return interchageNum;
 		}else{
 			if(noneZeroRow!=startNoneZeroRow){
 				if(whetherWrite) writeProcess("交换矩阵的第"+startNoneZeroRow+"行和第"+noneZeroRow+"行得:");
 				exchangeRowij(aij,noneZeroRow, startNoneZeroRow);
-				writeProcess(aij);
+				interchageNum++;
+				if(whetherWrite) writeProcess(aij);
 			}
 
 			for(int i=startNoneZeroRow+1;i<=aij.length;i++){
@@ -302,7 +302,7 @@ public class MainActivity extends ActionBarActivity {
 				
 			}
 			startNoneZeroRow+=1;startNoneZeroCol=noneZeroCol+1;	
-			labber(aij,startNoneZeroRow,startNoneZeroCol,whetherWrite);
+			return labber(aij,startNoneZeroRow,startNoneZeroCol,whetherWrite,interchageNum);
 		}
     }
     
