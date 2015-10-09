@@ -276,13 +276,6 @@ public class MainActivity extends ActionBarActivity {
 			
 			if(whetherWrite) writeProcess("该矩阵的秩为"+countNotZeroRow(aij));
 			
-			if(aij.length==aij[0].length){
-				double h=1;
-				for(int i=1;i<=aij.length;i++){
-					h*=getaij(aij,i,i);
-				}
-				if(whetherWrite) writeProcess("该矩阵的行列式的值为"+h);
-			}
 			return interchageNum;
 		}else{
 			if(noneZeroRow!=startNoneZeroRow){
